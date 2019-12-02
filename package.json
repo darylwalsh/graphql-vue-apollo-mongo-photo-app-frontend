@@ -1,6 +1,6 @@
 {
   "name": "graphql-vue-apollo-mongo-photo-app-frontend",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "description": "graphql vue apollo mongo front end photo app",
   "author": "Daryl",
