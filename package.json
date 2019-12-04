@@ -2,8 +2,6 @@
   "name": "graphql-vue-apollo-mongo-photo-app-frontend",
   "version": "0.1.4",
   "private": true,
-  "description": "graphql vue apollo mongo front end photo app",
-  "author": "Daryl",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -13,21 +11,23 @@
     "ci:validate": "rm -rf node_modules && npm ci && npm run validate",
     "commit": "git-cz",
     "postrelease": "run-s release:*",
-    "prepublishOnly": "npm run ci:validate && npm run build",
+    "validate": "run-s test lint prettier:check",
     "prerelease": "git-authors-cli && git add .",
     "prettier:check": "prettier --check 'reactfe/src/**/*.{js,ts,tsx,js}'",
     "release": "standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
     "release:tags": "git push --follow-tags origin master",
     "styleguide:build": "...",
-    "validate": "run-s test lint prettier:check"
+    "prepublishOnly": "npm run ci:validate && npm run build"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "@mdi/font": "^3.9.97",
     "core-js": "^2.6.5",
     "roboto-fontface": "^0.10.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
+    "vuetify": "^2.1.0",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -57,6 +57,7 @@
     "git-authors-cli": "^1.0.18",
     "husky": "^3.1.0",
     "lint-staged": "^8.2.1",
+    "material-design-icons-iconfont": "^5.0.1",
     "node-fetch": "^2.6.0",
     "now": "^16.1.2",
     "npm-run-all": "^4.1.5",
@@ -66,8 +67,11 @@
     "scaffdog": "^0.1.2",
     "standard-version": "^7.0.1",
     "thread-loader": "^2.1.3",
+    "vue-cli-plugin-vuetify": "^2.0.2",
     "vue-template-compiler": "^2.6.10"
   },
+  "author": "Daryl",
+  "description": "graphql vue apollo mongo front end photo app",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"

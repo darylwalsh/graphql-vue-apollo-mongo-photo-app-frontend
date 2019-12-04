@@ -4,3 +4,4 @@ build/
 .docz/
 /.vscode
 /.git
+plugins/vuetify.js
