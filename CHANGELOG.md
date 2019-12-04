@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/darylwalsh/graphql-vue-apollo-mongo-photo-app-frontend/compare/v0.1.5...v0.1.6) (2019-12-04)
+
+
+### Features
+
+* **routing:** add routes ([4fd6614](https://github.com/darylwalsh/graphql-vue-apollo-mongo-photo-app-frontend/commit/4fd661478f718018a00e4d6b64ff139770397b35))
+
 ### [0.1.5](https://github.com/darylwalsh/graphql-vue-apollo-mongo-photo-app-frontend/compare/v0.1.4...v0.1.5) (2019-12-04)
 
 
