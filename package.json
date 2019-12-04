@@ -16,16 +16,18 @@
     "prettier:check": "prettier --check 'reactfe/src/**/*.{js,ts,tsx,js}'",
     "release": "standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
-    "release:tags": "git push --follow-tags origin master",
+    "release:tags": "git push --follow-tags origin development",
     "styleguide:build": "...",
     "prepublishOnly": "npm run ci:validate && npm run build"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "^3.9.97",
+    "apollo-boost": "^0.4.4",
     "core-js": "^2.6.5",
     "roboto-fontface": "^0.10.0",
     "vue": "^2.6.10",
+    "vue-apollo": "^3.0.2",
     "vue-router": "^3.0.3",
     "vuetify": "^2.1.0",
     "vuex": "^3.0.1"
